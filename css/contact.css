@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600;700&family=Public+Sans:wght@300;400;500;600;700&display=swap');
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --second-font:'Ibarra Real Nova', serif;
+  --primary-color: #203a4c;
+  --secondary-color: #5fb4a2;
+  --text-color: #33323d;
+  --line-color:#d4d4d6;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Public Sans', sans-serif;
+  color: var(--text-color);
+}
+.container{
+  width: 1130px;
+  padding: 0px 10px;
+}
+ul{
+  list-style-type: none;
+}
+img{
+  max-width: 100%;
+}
+
+/* Header */
+
+.header__inner {
+  padding: 70px 0px;
+}
+.header__logo {
+  width: 60px;
+  height: 32px;
+}
+.nav__item {
+  margin-right: 42px;
+}
+.nav__link {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+.header__btn {
+  display: none;
+}
+.nav__item .active{
+  color: var(--secondary-color);
+}
+
+
+@media screen and (max-width:	960px) {
+  .container{
+    width: 90%;
+  }
+
+}
+
+@media screen and (max-width:	540px) {
+  /* Header */
+  .header__btn{
+    display: flex;
+    cursor: pointer;
+    height: 30px;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+  }
+  .header__nav{
+    width: 223px;
+    height: 0;
+    position: absolute;
+    right: 32px;
+    top: 120px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+  }
+  .nav__list{
+    flex-direction: column;
+    background-color: var(--text-color);
+    color: #fff;
+    padding: 40px 0px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav__item{
+    margin-right: 0;
+  }
+  .nav__item:not(:last-child){
+    margin-bottom: 32px;
+  }
+  .nav__link{
+    color: #fff;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .show{
+    height: 200px;
+  }
+  .footer__inner{
+    flex-direction: column;
+  }
+  .footer__list{
+    flex-direction: column;
+  }
+  .footer__logo{
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .footer__item{
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+  .socials__list{
+    margin-bottom: 20px;
+  }
+}
