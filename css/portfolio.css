@@ -264,8 +264,7 @@ padding-right: 50px;
   border: 1px solid var(--line-color);
   border-right: none;
 }
-.col-xs-6 {
-}
+
 .templates__btn-prev{
   margin-right: 12px;
 }
@@ -290,8 +289,7 @@ padding-right: 50px;
   mix-blend-mode: normal;
   opacity: 0.5;
 }
-.second__section {
-}
+
 .bx-chevron-right {
   font-size: 40px;
   color: var(--text-color);
@@ -398,5 +396,14 @@ padding-right: 50px;
   }
   .manage__img{
     margin-bottom: 0;
+  }
+  .templates__btn-prev{
+    margin-right: 6px;
+  }
+  .templates__btn-next{
+    margin-left: 6px;
+  }
+  .templates__name {
+    font-size: 22px;
   }
 }
