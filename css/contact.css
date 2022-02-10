@@ -252,4 +252,7 @@ img{
   .socials__list{
     margin-bottom: 20px;
   }
+  .contact__title {
+    margin-bottom: 20px;
+  }
 }
