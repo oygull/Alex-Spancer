@@ -166,13 +166,144 @@ img{
   opacity: 0.8;
   margin-bottom: 24px;
 }
+.aspects__btn{
+  display: inline-block;
+  text-decoration: none;
+  color: var(--text-color);
+}
+.contact__btn{
+  text-decoration: none;
+  display: inline-block;
+  color: var(--text-color);
+}
 
+/* Manage */
+
+.manage {
+  margin-top: 50px;
+}
+
+.manage__img {
+  margin-bottom: 100px;
+}
+.manage__inner {
+  padding: 50px 0;
+}
+.manage__desc {
+padding-right: 50px;
+}
+
+.manage__heading {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 42px;
+  font-family: var(--second-font);
+  letter-spacing: -0.35px;
+  margin-bottom: 30px;
+}
+.manage__text {
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 25px;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+.manage__par {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--secondary-color);
+  margin-bottom: 16px;
+}
+.manage__btn {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 16px;
+  color: var(--text-color);
+}
+.manage__content {
+}
+
+.manage__title {
+  font-size: 32px;
+  line-height: 42px;
+  font-family: var(--second-font);
+  letter-spacing: -0.28px;
+  margin-bottom: 28px;
+  font-weight: normal;
+}
+
+.manage__line-end{
+  width: 100%;
+  height: 1px;
+  background-color: var(--line-color);
+  margin-top: 48px;
+}
+.manage__line-start{
+  width: 100%;
+  height: 1px;
+  background-color: var(--line-color);
+  margin-bottom: 48px;
+}
+
+/* Sections */
+
+.templates {
+  margin: 50px 0px;
+}
+.first__section {
+  padding: 32px 10px;
+  border: 1px solid var(--line-color);
+  border-left: none;
+}
+.second__section{
+ display: flex;
+ flex-direction: column;
+ align-items: flex-end;
+  padding: 32px 10px;
+  border: 1px solid var(--line-color);
+  border-right: none;
+}
+.col-xs-6 {
+}
+.templates__btn-prev{
+  margin-right: 12px;
+}
+.templates__btn-next{
+  margin-left: 12px;
+}
+.bx {
+}
+.bx-chevron-left {
+  font-size: 40px;
+  color: var(--text-color);
+}
+.templates__name {
+  font-size: 32px;
+  line-height: 36px;
+  font-family: var(--second-font);
+  letter-spacing: -0.28px;
+}
+.templates__text {
+  font-size: 16px;
+  line-height: 30px;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.second__section {
+}
+.bx-chevron-right {
+  font-size: 40px;
+  color: var(--text-color);
+}
 
 @media screen and (max-width:	960px) {
   .container{
     width: 90%;
   }
-
+  .relocation {
+    flex-direction: row-reverse;
+  }
 }
 
 @media screen and (max-width:	540px) {
@@ -261,5 +392,11 @@ img{
   }
   .aspects__item{
     margin-bottom: 50px;
+  }
+  .manage__desc{
+    padding-right: 0;
+  }
+  .manage__img{
+    margin-bottom: 0;
   }
 }

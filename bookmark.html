@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Spencer</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+
+<body>
+  <!-- Header -->
+
+  <header class="site-header header">
+    <div class="container">
+      <div class="header__inner row middle-xs between-xs">
+        <a href="#" class="header__logolink">
+          <img class="header__logo" src="images/logo.svg" alt="logo">
+        </a>
+        <nav id="headerNav" class="header__nav nav">
+          <ul class="nav__list row middle-xs">
+            <li class="nav__item"><a href="index.html" class="nav__link">HOME</a></li>
+            <li class="nav__item"><a href="portfolio.html" class="nav__link  active">PORTFOLIO</a></li>
+            <li class="nav__item"><a href="contact.html" class="nav__link">CONTACT ME</a></li>
+          </ul>
+        </nav>
+        <button id="headerBtn" onclick="edit()" class="header__btn">
+          <img id="edit" src="images/menu.svg" alt="menu">
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Manage -->
+
+  <section class="manage">
+    <div class="container">
+      <img class="manage__img" src="images/bookmark1.jpg" alt="manage">
+      <div class="manage__inner row">
+        <div class="manage__desc col-xs-12 col-md-5">
+          <div class="manage__line-start"></div>
+          <h2 class="manage__heading">Bookmark</h2>
+          <div class="relocation row">
+            <p class="manage__text col-xs-12 col-sm-6 col-md-12">This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.</p>
+            <div class="relocation__inner col-xs-12 col-sm-6 col-md-12">
+              <p class="manage__par">This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page. The only JavaScript this project required was to enable the toggling of the mobile navigation.</p>
+              <p class="manage__par">HTML / CSS / JS</p>
+              <a href="#" class="manage__btn btn">VISIT WEBSITE</a>
+            </div>
+          </div>
+          <div class="manage__line-end"></div>
+        </div>
+        <div class="manage__content col-xs-12 col-md-7">
+          <h3 class="manage__title">Project Background</h3>
+          <p class="manage__text">This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.</p>
+          <img src="images/bookmark2.jpg" alt="manage" class="manage__image2">
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+<!-- Templates -->
+
+<section class="templates">
+  <div class="container">
+    <div class="sections__inner row">
+      <div class="first__section col-xs-6">
+        <div class="row middle-xs">
+          <a href="manage.html" class="templates__btn-prev">   <i class='bx bx-chevron-left'></i></a>
+          <div>
+            <p class="templates__name">Manage</p>
+            <p class="templates__text">Previous Project</p>
+          </div>
+        </div>
+      </div>
+      <div class="second__section col-xs-6">
+        <div class="row middle-xs">
+          <div>
+            <p class="templates__name">Insure</p>
+            <p class="templates__text">Next Project</p>
+          </div>
+          <a href="insure.html" class="templates__btn-next"><i class='bx bx-chevron-right' ></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+
+<section class="contact">
+  <div class="container">
+    <div class="contact__inner row middle-xs">
+      <h3 class="contact__heading col-xs-12 col-sm-4">Interested in doing a project together?</h3>
+      <div class="contact__line col-xs-12 col-sm-6">
+        <div class="contact__lineinner"></div>
+      </div>
+      <div class="btn-box col-xs-12 col-sm-2">
+        <a href="contact.html" class="contact__btn btn ">CONTACT ME</a>
+      </div>
+     
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner row middle-xs">
+        <a href="#" class="footer__logo">
+          <img src="images/footer-logo.svg" alt="footer-logo">
+        </a>
+        <ul class="footer__list row middle-xs">
+          <li class="footer__item"><a href="index.html" class="footer__link">HOME</a></li>
+          <li class="footer__item"><a href="portfolio.html" class="footer__link">PORTFOLIO</a></li>
+          <li class="footer__item"><a href="contact.html" class="footer__link">CONTACT ME</a></li>
+        </ul>
+        <ul class="socials__list row middle-xs">
+          <li class="socials__item"><a href="#" class="socials__link"><i class='bx bxl-github'></i></a></li>
+          <li class="socials__item"><a href="#" class="socials__link"><i class='bx bxl-twitter' ></i></a></li>
+          <li class="socials__item"><a href="#" class="socials__link"><i class='bx bxl-linkedin'></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js">
+  </script>
+</body>
+
+</html>
